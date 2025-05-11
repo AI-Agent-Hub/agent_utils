@@ -1,0 +1,1 @@
+{"required":["publisher_id","content_name","content","field","subfield","content_tag_list","website","thumbnail_picture","status"],"optional":["category","tags","repo_star", "upload_image_files"]}
