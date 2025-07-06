@@ -1,0 +1,263 @@
+{
+    "mcpServers": {
+        "google-maps": {
+            "command": "npx",
+            "args": ["-y", "@modelcontextprotocol/server-google-maps"],
+            "env": {
+                "GOOGLE_MAPS_API_KEY": ""
+            }
+        },
+        "amap-amap-sse": {
+            "url": "https://mcp.amap.com/sse?key=<YOUR_API_KEY_HERE>"
+        },
+        "amap-maps": {
+            "command": "npx",
+            "args": ["-y", "@amap/amap-maps-mcp-server"],
+            "env": {
+                "AMAP_MAPS_API_KEY": "<YOUR_API_KEY_HERE>"
+            }
+        },
+        "tavily-mcp": {
+            "command": "npx",
+            "args": ["-y", "tavily-mcp@latest"],
+            "env": {
+              "TAVILY_API_KEY": "<YOUR_API_KEY_HERE>"
+            },
+            "disabled": false,
+            "autoApprove": []
+        },    
+        "ai-agent-marketplace-index-mcp": {
+            "command": "uv",
+            "args": ["--directory", "../ai-agent-marketplace-index-mcp/src/ai-agent-marketplace-index", "run", "server.py"]
+        },
+        "healthcare-agent-mcp-server": {
+            "command": "uv",
+            "args": ["--directory", "../healthcare-agent-mcp-server/src/healthcare-agent-mcp-server", "run", "server.py"]
+        },
+        "everart": {
+            "command": "npx",
+            "args": ["-y", "@modelcontextprotocol/server-everart"],
+            "env": {
+                "EVERART_API_KEY": "your_key_here"
+            }
+        },
+        "github": {
+            "command": "docker",
+            "args": ["run", "-i", "--rm", "-e", "GITHUB_PERSONAL_ACCESS_TOKEN", "ghcr.io/github/github-mcp-server"],
+            "env": {
+                "GITHUB_PERSONAL_ACCESS_TOKEN": "<YOUR_TOKEN>"
+            }
+        },
+        "gdrive": {
+            "command": "npx",
+            "args": ["-y", "@modelcontextprotocol/server-gdrive"]
+        },
+        "fetch": {
+            "command": "python",
+            "args": ["-m", "mcp_server_fetch"]
+        },
+        "brave-search": {
+            "command": "npx",
+            "args": [
+              "-y",
+              "@modelcontextprotocol/server-brave-search"
+            ],
+            "env": {
+              "BRAVE_API_KEY": "<YOUR_API_KEY_HERE>"
+            }
+        },
+        "ddg-search": {
+            "command": "uvx",
+            "args": ["duckduckgo-mcp-server"]
+        },
+        "perplexity-ask": {
+            "command": "npx",
+            "args": ["-y", "server-perplexity-ask"],
+            "env": {
+                "PERPLEXITY_API_KEY": "YOUR_API_KEY_HERE"
+            }
+        },
+        "firecrawl-mcp": {
+            "command": "npx",
+            "args": ["-y", "firecrawl-mcp"],
+            "env": {
+                "FIRECRAWL_API_KEY": "<YOUR_API_KEY_HERE>"
+            }
+        },
+        "browser-tools-server": {
+            "command": "npx",
+            "args": ["-y", "@agentdeskai/browser-tools-server@latest"]
+        },
+        "puppeteer": {
+            "command": "npx",
+            "args": ["-y", "@modelcontextprotocol/server-puppeteer"]
+        },
+        "playwright": {
+            "command": "npx",
+            "args": ["-y", "@executeautomation/playwright-mcp-server"]
+        },    
+        "bing-search": {
+            "command": "uvx",
+            "args": ["../data/mcp/github/bing-search-mcp"],
+            "env": {
+                "BING_API_KEY": "your-bing-api-key"
+            }
+        },
+        "Adity-star/mcp-yfinance-server": {
+            "command": "uv",
+            "args": ["--directory", "../github/mcp-yfinance-server", "run", "demo_stock_price_server.py"]
+        },
+        "stefanoamorelli/nasdaq-data-link-mcp": {
+            "command": "uv",
+            "args": ["--directory", "../github/nasdaq-data-link-mcp/nasdaq_data_link_mcp_os", "run", "server.py"],
+            "env": {
+                "ALPHAVANTAGE_API_KEY": "YOUR_API_KEY_HERE"
+            }
+        },
+        "calvernaz/alphavantage": {
+            "command": "uv",
+            "args": ["--directory", "../github/alphavantage/src/alphavantage_mcp_server", "run", "server.py"],
+            "env": {
+                "ALPHAVANTAGE_API_KEY": "YOUR_API_KEY_HERE"
+            }
+        },
+        "financial-datasets/mcp-server": {
+            "command": "uv",
+            "args": ["--directory", "../github/financial-datasets/mcp-server", "run", "server.py"]
+        },
+        "stefanoamorelli/sec-edgar-mcp": {
+            "command": "uv",
+            "args": ["--directory", "../github/sec-edgar-mcp/sec_edgar_mcp", "run", "server.py"],
+            "env": {
+                "SEC_EDGAR_USER_AGENT": "SEC_EDGAR_USER_AGENT"
+            }
+        },
+        "finance-agent-mcp-server": {
+            "command": "uv",
+            "args": ["--directory", "../finance-agent-mcp-server/src/finance-agent-mcp-server", "run", "server.py"]
+        },
+        "nasdaq-data-link-mcp": {
+            "command": "uv",
+            "args": ["run", "../github/nasdaq-data-link-mcp/nasdaq_data_link_mcp_os/server.py"],
+            "env": {
+                "PYTHONPATH": "..//github/nasdaq-data-link-mcp/nasdaq-data-link-mcp",
+                "NASDAQ_DATA_LINK_API_KEY":"<YOUR_API_KEY_HERE>"
+            }
+        },      
+        "baidu-maps-sse": {
+            "url": "https://mcp.map.baidu.com/sse?ak=<YOUR_API_KEY_HERE>"
+        },
+        "baidu-map": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@baidumap/mcp-server-baidu-map"
+            ],
+            "env": {
+                "BAIDU_MAP_API_KEY": "<YOUR_API_KEY_HERE>"
+            }
+        },      
+        "mcp-server-alipay": {
+            "command": "npx",
+            "args": ["-y", "@alipay/mcp-server-alipay"],
+            "env": {
+              "AP_APP_ID": "xxx",
+              "AP_APP_KEY": "xxx",
+              "AP_PUB_KEY": "xxx",
+              "AP_RETURN_URL": "https://github.com/modelcontextprotocol/servers",
+              "AP_NOTIFY_URL": "https://github.com/modelcontextprotocol/servers"
+            },
+            "disable": false,
+            "autoApprove": []
+        },
+        "paypal-mcp-server": { 
+            "command": "npx", 
+            "args": [ 
+                "mcp-remote", 
+                "https://mcp.paypal.com/sse" 
+            ] 
+        },
+        "paypal": {
+            "command": "npx",
+            "args": [
+              "-y",
+              "@paypal/mcp",
+              "--tools=all"
+            ],
+            "env": {
+              "PAYPAL_ACCESS_TOKEN": "xxxx",
+              "PAYPAL_ENVIRONMENT": "SANDBOX"
+            }
+        },
+        "postgres": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-postgres",
+                "postgresql://localhost/mydb"
+            ]
+        },
+        "redis": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-redis",
+                "redis://localhost:6379"
+            ]
+        },
+        "google-search": {
+            "command": "npx",
+            "args": [
+              "-y",
+              "@adenot/mcp-google-search"
+            ],
+            "env": {
+              "GOOGLE_API_KEY": "<YOUR_API_KEY_HERE>",
+              "GOOGLE_SEARCH_ENGINE_ID": "<YOUR_SE_ID_HERE>"
+            }
+        },  
+        "sqlite": {
+            "command": "uv",
+            "args": [
+                "--directory",
+                "../data/mcp/github/servers-archived/src/sqlite",
+                "run",
+                "mcp-server-sqlite",
+                "--db-path",
+                "../data/mcp/github/servers-archived/src/sqlite/test.db"
+            ]
+        },
+        "adb-mysql-mcp-server": {
+            "command": "uv",
+            "args": [
+              "--directory",
+              "../data/mcp/github/alibabacloud-adb-mysql-mcp-server",
+              "run",
+              "adb-mysql-mcp-server"
+            ],
+            "env": {
+              "ADB_MYSQL_HOST": "host",
+              "ADB_MYSQL_PORT": "port",
+              "ADB_MYSQL_USER": "database_user",
+              "ADB_MYSQL_PASSWORD": "database_password",
+              "ADB_MYSQL_DATABASE": "database"
+            }
+          },
+          "mysql": {
+            "command": "uv",
+            "args": [
+              "--directory",
+              "../data/mcp/github/mysql_mcp_server",
+              "run",
+              "mysql_mcp_server"
+            ],
+            "env": {
+              "MYSQL_HOST": "localhost",
+              "MYSQL_PORT": "3306",
+              "MYSQL_USER": "your_username",
+              "MYSQL_PASSWORD": "your_password",
+              "MYSQL_DATABASE": "your_database"
+            }
+          }
+    }
+}
