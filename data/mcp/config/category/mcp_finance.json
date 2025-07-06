@@ -1,0 +1,38 @@
+{
+    "mcpServers": {
+        "Adity-star/mcp-yfinance-server": {
+            "command": "uv",
+            "args": ["--directory", "../github/mcp-yfinance-server", "run", "demo_stock_price_server.py"]
+        },
+        "stefanoamorelli/nasdaq-data-link-mcp": {
+            "command": "uv",
+            "args": ["--directory", "../github/nasdaq-data-link-mcp/nasdaq_data_link_mcp_os", "run", "server.py"],
+            "env": {
+                "ALPHAVANTAGE_API_KEY": "YOUR_API_KEY_HERE"
+            }
+        },
+        "openMF/mcp-mifosx": {},
+        "calvernaz/alphavantage": {
+            "command": "uv",
+            "args": ["--directory", "../github/alphavantage/src/alphavantage_mcp_server", "run", "server.py"],
+            "env": {
+                "ALPHAVANTAGE_API_KEY": "YOUR_API_KEY_HERE"
+            }
+        },
+        "financial-datasets/mcp-server": {
+            "command": "uv",
+            "args": ["--directory", "../github/financial-datasets/mcp-server", "run", "server.py"]
+        },
+        "stefanoamorelli/sec-edgar-mcp": {
+            "command": "uv",
+            "args": ["--directory", "../github/sec-edgar-mcp/sec_edgar_mcp", "run", "server.py"],
+            "env": {
+                "SEC_EDGAR_USER_AGENT": "SEC_EDGAR_USER_AGENT"
+            }
+        },
+        "finance-agent-mcp-server": {
+            "command": "uv",
+            "args": ["--directory", "../github/finance-agent-mcp-server/src/finance-agent-mcp-server", "run", "server.py"]
+        }
+    }
+}
