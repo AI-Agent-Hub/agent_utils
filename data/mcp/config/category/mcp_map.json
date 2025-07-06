@@ -1,0 +1,24 @@
+{
+  "mcpServers": {
+    "google-maps": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-google-maps"
+      ],
+      "env": {
+        "GOOGLE_MAPS_API_KEY": "<YOUR_API_KEY>"
+      }
+    },
+    "amap-amap-sse": {
+      "url": "https://mcp.amap.com/sse?key=<YOUR_API_KEY>"
+    },
+    "baidu-maps": {
+      "command": "uvx",
+      "args": ["mcp-server-baidu-maps"],
+      "env": {
+        "BAIDU_MAPS_API_KEY": "<YOUR_API_KEY>"
+      }
+    }
+  }
+}
