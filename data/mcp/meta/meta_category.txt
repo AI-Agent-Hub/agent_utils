@@ -1,0 +1,31 @@
+Map|Collects the MCPs that provides map, location, route planning features
+Search|Maps that provides search API or services, such as Bing,Google, etc
+Database|Databases manipulation, query, select, update, delete operations
+Finance|Finance related MCPs, such as financial news, market data, EFT, stock, index, etc.
+Healthcare|Healthcare related MCPs, such as medicine, illness, nursing, diet, etc.
+Image|Image related MCPs for image search, image generation, image captaining, image understanding, etc.
+Video|Video related MCPs for video search, video generation, video captaining, video understanding,etc.
+Payment|Payment such as stripe, paypal and Alipay, which provides orders selection APIs and functions, etc.
+GUI|Graphic User Interface related MCP Servers
+Communication|MCPs for instant messages, such as whatsapp, Telegram, Wechat related APIs or services.
+Entertainment|Entertainment related MCP servers
+Memory|AI Apps Memory, such as storage, vector retrieval, long and short memory systems, etc.
+Art|Art related related MCP servers for design
+Science|Science related MCP servers for AIforScience, math, physics, chemistry, etc.
+Coding|Coding related MCP servers, which provides code generation, code completion services.
+Research|Deep Research relate MCP servers
+Calendar|Calendar and event reminder related MCP servers.
+Sales|Sales related MCP servers which help track and boost sales orders.
+Marketing| Marketing related MCP servers which help promote digital marketing.
+Operations| Operations related MCP servers which help track of the operation, manufacturing, logistics, etc.
+Workflow| AI Agent Workflow related MCP servers, which helps with the no-code or autonomous workflow, such as LangChain, LLamaIndex, etc.
+Education| Education related MCP servers for teaching, tutoring, etc
+Legal| Legal related MCP servers for AI lawyers, Case summarization, Legal Document processing, etc.
+Business| Business related MCP servers which include the sourcing, branding, etc.
+Chatbot| Chatbot related MCP servers
+Travel| Travel and Route Planning related MCP servers
+Thinking| Thinking and CoT related MCP servers
+Web| Web page scraping, crawler, fetching related MCP servers
+File| File System manipulation related MCP servers
+Browser| Browser use related MCP servers for automatic browser use, automation, etc.
+Blockchain| Blockchain related MCP servers which help track the coin price, marketplace, index, news, etc.
